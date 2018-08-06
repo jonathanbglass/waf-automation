@@ -23,7 +23,7 @@ Usage: ./waf <customer> <s3-logs-bucket> <command>
     create = create a new WAF setup for <customer>
     delete = delete a given <customer> WAF setup
 
-Example: ./waf cerbo s3-bucket-name create
+Example: ./waf customer01 s3-bucket-name create
 Example: ./waf customer01 s3-bucket-name delete
 ```
 
