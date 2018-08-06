@@ -1,7 +1,5 @@
 ## AWS WAF Security Automation - modular with Terraform
 
-For more info/help, contact us: support@cerbo.io (http://cerbo.io)
-
 This provides a modular way to deploy the WAF Reference Architecture (see bellow for image)
 The key things about this (and comparison with the official Amazon
 Cloud Formation) are:
@@ -25,7 +23,7 @@ Usage: ./waf <customer> <s3-logs-bucket> <command>
     create = create a new WAF setup for <customer>
     delete = delete a given <customer> WAF setup
 
-Example: ./waf cerbo s3-bucket-name create
+Example: ./waf customer01 s3-bucket-name create
 Example: ./waf customer01 s3-bucket-name delete
 ```
 
@@ -47,20 +45,3 @@ https://github.com/awslabs/aws-waf-security-automations
 * It is ridiculously slow. 
 * This is mostly to compare to our automated deployment, and make sure everything is the same
 https://console.aws.amazon.com/cloudformation/designer/home?region=us-east-1&templateUrl=https://s3.amazonaws.com/solutions-reference/aws-waf-security-automations/latest/aws-waf-security-automations.template
-
-#### LICENSE
-```
-Copyright 2016 Cerbo.IO, LLC.
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-  http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-```
