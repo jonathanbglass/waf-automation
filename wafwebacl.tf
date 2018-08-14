@@ -19,7 +19,7 @@ resource "aws_waf_web_acl" "WAFWebACL" {
     name = "${var.customer}"
     metric_name = "SecurityAutomationsMaliciousRequesters"
     default_action {
-        type = "ALLOW"
+        type = "${var.DefaultRuleAllowBlock}"
     }
     rules {
         action {

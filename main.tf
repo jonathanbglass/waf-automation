@@ -27,6 +27,12 @@ variable "CloudFrontAccessLogBucket" {
     description = "[REQUIRED] CDN S3 Logs Bucket:"
     default     = "jonathan-logging-candid"
 }
+
+variable "DefaultRuleAllowBlock" {
+    description = "Whether to ALLOW or BLOCK traffic that does not match rules. Use BLOCK for Non-Prod environments."
+    default = "ALLOW"
+}
+
 ###############################################################################
 
 
